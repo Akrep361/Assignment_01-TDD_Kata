@@ -12,24 +12,24 @@ public class FizzBuzzTest
     }
 
     [Fact]
-    public void Given3_ShouldReturnFizz()
+    public void Given3_ShouldReturnFizzFizz()
     {
         var result = FizzBuzz.Calculate(3);
-        Assert.Equal("Fizz", result);
+        Assert.Equal("FizzFizz", result);
     }
 
     [Fact]
-    public void Given5_ShouldReturnBuzz()
+    public void Given5_ShouldReturnBuzzBuzz()
     {
         var result = FizzBuzz.Calculate(5);
-        Assert.Equal("Buzz", result);
+        Assert.Equal("BuzzBuzz", result);
     }
 
     [Fact]
-    public void Given15_ShouldReturnFizzBuzz()
+    public void Given15_ShouldReturnFizzBuzzBuzz()
     {
         var result = FizzBuzz.Calculate(15);
-        Assert.Equal("FizzBuzz", result);
+        Assert.Equal("FizzBuzzBuzz", result);
     }
 
     [Fact]
