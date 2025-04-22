@@ -32,8 +32,12 @@ public class FizzBuzzTest
         Assert.Equal("FizzBuzz", result);
     }
 
-
-
+    [Fact]
+    public void Given53_ShouldReturnFizzBuzz()
+    {
+        var result = FizzBuzz.Calculate(53);
+        Assert.Equal("FizzBuzz", result);
+    }
 }
 
 
