@@ -38,6 +38,14 @@ public class FizzBuzzTest
         var result = FizzBuzz.Calculate(53);
         Assert.Equal("FizzBuzz", result);
     }
+
+    [Fact]
+    public void Given35_ShouldReturnFizzBuzzBuzz()
+    {
+        var result = FizzBuzz.Calculate(35);
+        Assert.Equal("FizzBuzzBuzz", result);
+    }
+
 }
 
 
