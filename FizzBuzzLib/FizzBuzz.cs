@@ -4,16 +4,15 @@ public static class FizzBuzz
 {
     public static string Calculate(int number)
     {
-        if (number % 3 == 0 && number % 5 == 0)
-            return "FizzBuzz";
-        //wenn zahl durch 3 teilbar
+        string result = "";
+
         if (number % 3 == 0)
-            return "Fizz";
-        //wenn zahl durch 5 teilbar
+            result += "Fizz";
         if (number % 5 == 0)
-            return "Buzz";
-        
-        return number.ToString();
+            result += "Buzz";
+
+        return result == "" ? number.ToString() : result;
     }
+
 
 }
