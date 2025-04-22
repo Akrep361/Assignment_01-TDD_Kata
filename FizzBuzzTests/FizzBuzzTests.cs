@@ -1,3 +1,4 @@
+using Xunit;
 using FizzBuzzLib;
 
 namespace FizzBuzzTests;
@@ -44,6 +45,27 @@ public class FizzBuzzTest
     {
         var result = FizzBuzz.Calculate(35);
         Assert.Equal("FizzBuzzBuzz", result);
+    }
+
+    [Fact]
+    public void Given51_ShouldReturnFizzBuzz()
+    {
+        var result = FizzBuzz.Calculate(51);
+        Assert.Equal("FizzBuzz", result);
+    }
+
+    [Fact]
+    public void Given33_ShouldReturnFizzFizz()
+    {
+        var result = FizzBuzz.Calculate(33);
+        Assert.Equal("FizzFizz", result);
+    }
+
+    [Fact]
+    public void Given7_ShouldReturn7()
+    {
+        var result = FizzBuzz.Calculate(7);
+        Assert.Equal("7", result);
     }
 
 }
