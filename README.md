@@ -1,50 +1,51 @@
 # Assignment_01-TDD_Kata
 
 ## Team  
-Momentan keins - Partner hat Studiengang gewechselt.
+Currently none – partner has changed degree program.
 
 ## Tools & Setup  
-- Sprache: C# (.NET 8)  
+- Language: C# (.NET 8)  
 - IDE: Visual Studio Code  
-- Testframework: xUnit  
-- Testlauf: `dotnet watch test`  
+- Test framework: xUnit  
+- Test runner: `dotnet watch test`  
 - Repo: https://github.com/Akrep361/Assignment_01-TDD_Kata
 
 ---
 
-## Vorgehen (TDD)
+## Approach
 
-- Projekt in zwei Teile aufgeteilt: Logik (`FizzBuzzLib`) und Tests (`FizzBuzzTests`)  
-- Jeder Schritt nach TDD:
-  - Test geschrieben (Red)  
-  - Minimaler Code (Green)  
-  - Refactor wenn nötig
+The project is divided into two parts: logic (`FizzBuzzLib`) and tests (`FizzBuzzTests`).  
+Each step was done using the TDD cycle:
+- Write a failing test (Red)  
+- Write the minimal implementation (Green)  
+- Refactor if needed
 
-### Stage 1 – klassische Regeln
+### Stage 1 – Basic Rules
 - `1` → `"1"`  
 - `3` → `"Fizz"`  
 - `5` → `"Buzz"`  
 - `15` → `"FizzBuzz"`  
-- Refactor: string-Verkettung statt verschachtelter ifs
+- Refactoring: replaced nested `if` blocks with string concatenation
 
-### Stage 2 – enthält 3/5
+### Stage 2 – Contains 3/5
 - `53` → `"FizzBuzz"`  
 - `35` → `"FizzBuzzBuzz"`  
-- Alte Tests angepasst:
+- Adjusted previous tests:
   - `3` → `"FizzFizz"`  
   - `5` → `"BuzzBuzz"`  
   - `15` → `"FizzBuzzBuzz"`  
-- Weitere Tests:
+- Additional tests:
   - `51` → `"FizzBuzz"`  
   - `33` → `"FizzFizz"`  
-  - `7` → `"7"` (Kontrollfall)
+  - `7` → `"7"` (control case)  
+Used the example numbers from the task as test cases, as they sufficiently cover all rules.
 
 ---
 
-## Erkenntnisse
+## Observations
 
-- TDD gibt Struktur und gute Fehlerkontrolle  
-- Refactor wird durch grüne Tests abgesichert  
-- `Contains('3')` und `Contains('5')` als einfache Lösung zur Ziffernerkennung  
-- Tests spiegeln Anforderungen direkt wider  
-- Baby Steps wurden nicht angewendet
+- TDD provides structure and good error control  
+- Refactoring is safe after green tests  
+- `Contains('3')` and `Contains('5')` were simple and effective for digit checks  
+- Tests clearly reflect the defined requirements  
+- Baby Steps were not used, as TDD was new to me (no time constraint applied)
