@@ -25,6 +25,14 @@ public class FizzBuzzTest
         Assert.Equal("Buzz", result);
     }
 
+    [Fact]
+    public void Given15_ShouldReturnFizzBuzz()
+    {
+        var result = FizzBuzz.Calculate(15);
+        Assert.Equal("FizzBuzz", result);
+    }
+
+
 
 }
 
