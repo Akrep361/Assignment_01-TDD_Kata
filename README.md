@@ -1,7 +1,7 @@
 # Assignment_01-TDD_Kata
 
 ## Team  
-Currently none – partner has changed degree program.
+Melvin Mix, ... – partner has changed degree program.
 
 ## Tools & Setup  
 - Language: C# (.NET 8)  
